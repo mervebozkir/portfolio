@@ -1,0 +1,84 @@
+baseURL: "https://mervebozkir.com"
+languageCode: en-us
+title: Merve Bozkir
+theme: PaperMod
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: experience
+      name: Experience
+      url: /experience
+      weight: 40
+    - identifier: blog
+      name: Blog
+      url: /blog
+      weight: 20
+
+params:
+  # theme
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+  disableThemeToggle: true
+  defaultTheme: dark
+  # for enchanced SEO
+  env: production
+
+  # Home Page
+  profileMode:
+    enabled: true
+    title: "Merve Bozkir"
+    subtitle: Hi! I'm Merve, as Software QA Engineer I'm the nightmare of the developers. (Only in the job, I promise. 😄)
+
+ 
+    imageUrl: "home/profile_picture.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    buttons:
+       - name: Resume
+         url: "https://drive.google.com/file/d/1DxAneOy-IBgfnBRaA7uHqMusyMOfS996/view"
+
+  # List View
+  hideDescriptionInList: false
+
+  # cover image for posts
+  cover:
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:mervebozkir@windowslive.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/merve-bozkir-870827127"
+    - name: "github"
+      url: "https://github.com/mervebozkir"
+
+  # text search
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+# for search using Fuse.js
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# allow HTML in MD
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
