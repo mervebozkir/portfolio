@@ -5,7 +5,7 @@ draft: false
 tags: ["Karate DSL", "API Testing", "BDD"]
 weight: 102
 cover:
-    image: "blog/what-is-karate-testing/karate-header.png"
+    image: "blog/what-is-karate-testing/karate-test-header.jpg"
 ---
 
 # Introduction
