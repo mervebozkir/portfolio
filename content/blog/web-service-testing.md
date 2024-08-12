@@ -5,7 +5,7 @@ draft: false
 tags: ["Software Testing", "Webservice Testing"]
 weight: 103
 cover:
-    image: "/blog/web-service-testing/ws-testing.png"
+    image: "/blog/web-service-testing/ws-test-header.jpg"
 ---
 
 # What is a Web Service?
