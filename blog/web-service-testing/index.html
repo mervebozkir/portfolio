@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Web Service Testing | Merve Bozkir</title>
+<meta name="keywords" content="Software Testing, Webservice Testing">
+<meta name="description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML.">
+<meta name="author" content="">
+<link rel="canonical" href="https://mervebozkir.com/blog/web-service-testing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.6e36bd5a6f9ab6554daa7efc85256209cac3e1efe68334e9e9bfa0101dc9010d.css" integrity="sha256-bja9Wm&#43;atlVNqn78hSViCcrD4e/mgzTp6b&#43;gEB3JAQ0=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.b95bacdc39e37a332a9f883b1e78be4abc1fdca2bc1f2641f55e3cd3dabd4d61.js" integrity="sha256-uVus3DnjejMqn4g7Hni&#43;Srwf3KK8HyZB9V4809q9TWE="
+    onload="hljs.initHighlightingOnLoad();"></script>
+<link rel="icon" href="https://mervebozkir.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mervebozkir.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mervebozkir.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mervebozkir.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mervebozkir.com/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript><meta property="og:title" content="Web Service Testing" />
+<meta property="og:description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mervebozkir.com/blog/web-service-testing/" />
+<meta property="og:image" content="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" /><meta property="article:section" content="blog" />
+
+
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" />
+<meta name="twitter:title" content="Web Service Testing"/>
+<meta name="twitter:description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML."/>
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Blogs",
+      "item": "https://mervebozkir.com/blog/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  3 ,
+      "name": "Web Service Testing",
+      "item": "https://mervebozkir.com/blog/web-service-testing/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Web Service Testing",
+  "name": "Web Service Testing",
+  "description": "What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.\nBriefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.\nJSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML.",
+  "keywords": [
+    "Software Testing", "Webservice Testing"
+  ],
+  "articleBody": "What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.\nBriefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.\nJSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication.\nApplications and systems written in different programming languages and running on various platforms communicate through JSON or XML, making them independent of any operating system or programming language.\nWeb services can be examined under the SOAP and REST architectures. Let’s briefly touch on these concepts.\nSOAP: Standing for Simple Object Access Protocol, SOAP is a service protocol that primarily uses the HTTP protocol for communication. It communicates exclusively through XML and is not flexible in this regard.\nAlthough it only supports communication through XML, security controls are easier within SOAP, making it more frequently used when such controls are necessary.\nREST: Standing for Representational State Transfer, REST is an architecture that also uses the HTTP protocol for communication. However, unlike SOAP, it does not mandate the use of XML. It allows communication using JSON, HTML, or even plain text. This flexibility makes it more preferred.\nThe amount of data transferred within REST is smaller, making it ideal for applications requiring high performance.\nWeb Service Testing Web service tests hold a significant place among test types and are conducted to check the functionality, performance, and reliability of an application or system. To ensure systems work successfully and data flow is correctly provided, it is necessary to test the web services that supply data to the user interface.\nThe general working principle of web service tests is the same. The client sends a request, and the server returns an appropriate response based on the received request. It is crucial to ensure the correctness of the fields in the sent request; otherwise, an incorrect response will be returned, leading to a misinterpretation of the test.\nWeb service tests are similar to unit tests in some aspects but differ in the following way: the development of web service tests is done in a way that supports all versions of the application. Thus, even if a new version of the application is released, regression testing can be performed for both the current and all previous versions. This situation prevents an increase in test time during the development of new parts of the product and ensures usability in older versions of the product without needing changes.\nThere are many tools available for conducting web service testing. The most common ones are SoapUI, Postman, and JMeter. Web service tests can be performed manually with SoapUI, while Postman and JMeter are more commonly used for automating web service tests.\nIn this article, I briefly introduced web services and discussed the purposes of web service testing. See you in future articles :)\nSOURCES\nhttps://www.tutorialspoint.com/webservices/what_are_web_services.htm https://www.guru99.com/webservice-testing-beginner-guide.html Medium\n",
+  "wordCount" : "515",
+  "inLanguage": "en",
+  "image":"https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://mervebozkir.com/blog/web-service-testing/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Merve Bozkir",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mervebozkir.com/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+
+<body class=" dark" id="top">
+
+<header class="header sticky-header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="https://mervebozkir.com" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
+            <span class="logo-switches">
+            </span>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="https://mervebozkir.com/" title="Home">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mervebozkir.com/blog" title="Blog">
+                    <span>Blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://mervebozkir.com/experience" title="Experience">
+                    <span>Experience</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="https://mervebozkir.com">Home</a>&nbsp;»&nbsp;<a href="https://mervebozkir.com/blog/">Blogs</a></div>
+    <h1 class="post-title">
+      Web Service Testing
+    </h1>
+    <div class="post-meta">
+
+
+Dec 2020
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="lazy" src="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" alt="">
+        
+</figure><div class="toc">
+    <details >
+        <summary accesskey="c" title="(Alt + C)">
+            <span class="details">‎ Table of Contents</span>
+        </summary>
+
+        <div class="inner"><ul>
+                <li>
+                    <a href="#what-is-a-web-service" aria-label="What is a Web Service?">What is a Web Service?</a></li>
+                <li>
+                    <a href="#web-service-testing" aria-label="Web Service Testing">Web Service Testing</a>
+                </li>
+            </ul>
+        </div>
+    </details>
+</div>
+
+  <div class="post-content"><h1 id="what-is-a-web-service">What is a Web Service?<a hidden class="anchor" aria-hidden="true" href="#what-is-a-web-service">#</a></h1>
+<p>The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.</p>
+<p>Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.</p>
+<p>JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication.</p>
+<p>Applications and systems written in different programming languages and running on various platforms communicate through JSON or XML, making them independent of any operating system or programming language.</p>
+<p>Web services can be examined under the SOAP and REST architectures. Let&rsquo;s briefly touch on these concepts.</p>
+<p><img loading="lazy" src="/blog/web-service-testing/soap-and-rest.png" alt=""  />
+</p>
+<p><strong>SOAP:</strong> Standing for Simple Object Access Protocol, SOAP is a service protocol that primarily uses the HTTP protocol for communication. It communicates exclusively through XML and is not flexible in this regard.</p>
+<p>Although it only supports communication through XML, security controls are easier within SOAP, making it more frequently used when such controls are necessary.</p>
+<p><strong>REST:</strong> Standing for Representational State Transfer, REST is an architecture that also uses the HTTP protocol for communication. However, unlike SOAP, it does not mandate the use of XML. It allows communication using JSON, HTML, or even plain text. This flexibility makes it more preferred.</p>
+<p>The amount of data transferred within REST is smaller, making it ideal for applications requiring high performance.</p>
+<h1 id="web-service-testing">Web Service Testing<a hidden class="anchor" aria-hidden="true" href="#web-service-testing">#</a></h1>
+<p>Web service tests hold a significant place among test types and are conducted to check the functionality, performance, and reliability of an application or system. To ensure systems work successfully and data flow is correctly provided, it is necessary to test the web services that supply data to the user interface.</p>
+<p>The general working principle of web service tests is the same. The client sends a request, and the server returns an appropriate response based on the received request. It is crucial to ensure the correctness of the fields in the sent request; otherwise, an incorrect response will be returned, leading to a misinterpretation of the test.</p>
+<p>Web service tests are similar to unit tests in some aspects but differ in the following way: the development of web service tests is done in a way that supports all versions of the application. Thus, even if a new version of the application is released, regression testing can be performed for both the current and all previous versions. This situation prevents an increase in test time during the development of new parts of the product and ensures usability in older versions of the product without needing changes.</p>
+<p>There are many tools available for conducting web service testing. The most common ones are SoapUI, Postman, and JMeter. Web service tests can be performed manually with SoapUI, while Postman and JMeter are more commonly used for automating web service tests.</p>
+<p>In this article, I briefly introduced web services and discussed the purposes of web service testing. See you in future articles :)</p>
+<p><img loading="lazy" src="/blog/web-service-testing/ws-testing2.png" alt=""  />
+</p>
+<p><em>SOURCES</em></p>
+<ul>
+<li><a href="https://www.tutorialspoint.com/webservices/what_are_web_services.htm">https://www.tutorialspoint.com/webservices/what_are_web_services.htm</a></li>
+<li><a href="https://www.guru99.com/webservice-testing-beginner-guide.html">https://www.guru99.com/webservice-testing-beginner-guide.html</a></li>
+</ul>
+<p><a href="https://mervebozkir.medium.com/web-servi%CC%87s-ve-web-servi%CC%87s-testi%CC%87-8e0057a5c1b7">Medium</a></p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="https://mervebozkir.com/tags/software-testing/">Software Testing</a></li>
+      <li><a href="https://mervebozkir.com/tags/webservice-testing/">Webservice Testing</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+    <span>&copy; 2024 <a href="https://mervebozkir.com">Merve Bozkir</a></span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

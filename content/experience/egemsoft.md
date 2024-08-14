@@ -1,7 +1,7 @@
 ---
 title: "Software Test Engineer"
 description: "Egemsoft | Istanbul, Turkey"
-dateString: Oct 2018
+dateString: Oct 2018 - Jun 2020
 draft: false
 showToc: false
 weight: 303
