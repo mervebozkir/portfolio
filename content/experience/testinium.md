@@ -1,7 +1,7 @@
 ---
 title: "Software Test Specialist"
 description: "Testinium | Istanbul, Turkey"
-dateString: Jul 2020
+dateString: Jul 2020 - Aug 2022
 draft: false
 showToc: false
 weight: 302
