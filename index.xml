@@ -5,7 +5,7 @@
     <link>https://mervebozkir.com/</link>
     <description>Recent content on Merve Bozkir</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mervebozkir.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://mervebozkir.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Service Testing with Karate DSL</title>
       <link>https://mervebozkir.com/blog/more-testing-with-karate/</link>
@@ -48,6 +48,15 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
       <guid>https://mervebozkir.com/blog/agile-and-waterfall/</guid>
       <description>Introduction One of the most used concepts in the software world is SDLC (Software Development Life Cycle). So, what is SDLC? Briefly, it is the processes that include the development, design, and testing of a product.
 Understanding software development processes is as important for a test engineer as test quality, types, and test tools. In this article, I tried to briefly convey the most common SDLC processes, Agile and Waterfall modeling.</description>
+    </item>
+    
+    <item>
+      <title>Test Automation Engineer</title>
+      <link>https://mervebozkir.com/experience/burda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://mervebozkir.com/experience/burda/</guid>
+      <description>Hubert Burda Media | Munich, Germany</description>
     </item>
     
     <item>
