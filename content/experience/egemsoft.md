@@ -7,13 +7,11 @@ showToc: false
 weight: 303
 ---
 
-### Description
-
 - Analyzed, designed, and managed comprehensive testing processes for projects following the waterfall model, ensuring thorough coverage at each phase.
 - Executed and supported a range of tests—including integration, functional, regression, and User Acceptance Testing to validate software quality and functionality.
 - Identified, documented, and reported critical bugs, facilitating prompt resolution and maintaining high standards of product reliability.
 
-### *Projects*
+### Project
 
 - *'Bulut Depo/Netdisk Tekilleştirme' (Streamlined cloud operations by merging two separate systems into a unified platform, enhancing efficiency and user experience.)*
 - *'Tekşifre TTG Merkezi Login Altyapı' (Simplified telecom user authentication by consolidating multiple login credentials into a single, secure username and password system, improving customer convenience and security.)*

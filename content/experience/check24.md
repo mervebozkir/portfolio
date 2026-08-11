@@ -7,8 +7,6 @@ showToc: false
 weight: 301
 ---
 
-### Description
-
 - Leading QA Automation at Checkout-Payment Team, ensuring reliable user transactions.
 - Integrating and maintaining comprehensive test suites, bridging manual and automated testing to guarantee best product quality.
 - Collaborating with cross-functional teams to align QA strategies with overall project goals, ensuring a unified approach to quality.
@@ -16,7 +14,7 @@ weight: 301
 - Specialized in automation by using cutting-edge tools. Leveraging Cypress with JavaScript for UI and API automation, and Maestro for app testing.
 - Managing CI/CD pipelines with Jenkins and ArgoCD for streamlined deployment.
 
-### *Projects*
+### Project
 
 - *Shopping Services Payment project*
 - *CarParts Checkout-Payment projects*
