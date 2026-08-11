@@ -2,46 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/blog/more-testing-with-karate/</loc>
+    <loc>https://mervebozkir.com/blog/more-testing-with-karate/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/what-is-karate-testing/</loc>
+    <loc>https://mervebozkir.com/blog/what-is-karate-testing/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/web-service-testing/</loc>
+    <loc>https://mervebozkir.com/blog/web-service-testing/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/agile-and-waterfall/</loc>
+    <loc>https://mervebozkir.com/blog/agile-and-waterfall/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/check24/</loc>
+    <loc>https://mervebozkir.com/experience/burda/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/testinium/</loc>
+    <loc>https://mervebozkir.com/experience/check24/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/egemsoft/</loc>
+    <loc>https://mervebozkir.com/experience/testinium/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/agile/</loc>
+    <loc>https://mervebozkir.com/experience/egemsoft/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/api-testing/</loc>
+    <loc>https://mervebozkir.com/tags/agile/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/bdd/</loc>
+    <loc>https://mervebozkir.com/tags/api-testing/</loc>
   </url><url>
-    <loc>http://localhost:1313/blog/</loc>
+    <loc>https://mervebozkir.com/tags/bdd/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://mervebozkir.com/blog/</loc>
   </url><url>
-    <loc>http://localhost:1313/experience/</loc>
+    <loc>https://mervebozkir.com/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/kanban/</loc>
+    <loc>https://mervebozkir.com/experience/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/karate-dsl/</loc>
+    <loc>https://mervebozkir.com/tags/kanban/</loc>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://mervebozkir.com/tags/karate-dsl/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/scrum/</loc>
+    <loc>https://mervebozkir.com/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/software-testing/</loc>
+    <loc>https://mervebozkir.com/tags/scrum/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://mervebozkir.com/tags/software-testing/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/waterfall/</loc>
+    <loc>https://mervebozkir.com/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/webservice-testing/</loc>
+    <loc>https://mervebozkir.com/tags/waterfall/</loc>
+  </url><url>
+    <loc>https://mervebozkir.com/tags/webservice-testing/</loc>
   </url>
 </urlset>

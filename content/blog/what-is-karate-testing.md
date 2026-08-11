@@ -5,7 +5,7 @@ draft: false
 tags: ["Karate DSL", "API Testing", "BDD"]
 weight: 102
 cover:
-    image: "blog/what-is-karate-testing/karate-test-header.jpg"
+    image: "/blog/what-is-karate-testing/karate-test-header.jpg"
 ---
 
 # Introduction
@@ -112,4 +112,3 @@ In this way, we briefly talked about Karate and its usage. I hope this article w
 - https://en.wikipedia.org/wiki/Behavior-driven_development
 
 [Medium](https://medium.com/@mervebozkir/karate-nedir-proje-olu%C5%9Fturma-ve-web-servis-testi-nas%C4%B1l-yap%C4%B1l%C4%B1r-5eb15a20f932)
-

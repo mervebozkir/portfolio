@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Web Service Testing with Karate DSL | Merve Bozkir</title>
 <meta name="keywords" content="Karate DSL, API Testing, BDD">
-<meta name="description" content="Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
-Testing For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
-I selected the IUCN Red List of Threatened Species example from the Animals API examples.">
+<meta name="description" content="Introduction
+In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
+Testing
+For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
+I selected the IUCN Red List of Threatened Species example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/more-testing-with-karate/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.2e347c2bfd0eba8d6555a92d3b245a16a78304c408be4eddd37411e14999c48c.css" integrity="sha256-LjR8K/0Ouo1lVaktOyRaFqeDBMQIvk7d03QR4UmZxIw=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+<link rel="canonical" href="https://mervebozkir.com/blog/more-testing-with-karate/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.978d721c157a106eb3e5b1ccde794134b945ce8c5f93ea1566e592c5baaead88.css" integrity="sha256-l41yHBV6EG6z5bHM3nlBNLlFzoxfk&#43;oVZuWSxbqurYg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js" integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://mervebozkir.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mervebozkir.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mervebozkir.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mervebozkir.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mervebozkir.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/more-testing-with-karate/">
+<link rel="alternate" hreflang="en" href="https://mervebozkir.com/blog/more-testing-with-karate/">
 <noscript>
     <style>
         #theme-toggle,
@@ -31,25 +33,26 @@ I selected the IUCN Red List of Threatened Species example from the Animals API 
         }
 
     </style>
-</noscript>
-  
-
-<meta property="og:title" content="Web Service Testing with Karate DSL" />
-<meta property="og:description" content="Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
-Testing For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
-I selected the IUCN Red List of Threatened Species example from the Animals API examples." />
+</noscript><meta property="og:title" content="Web Service Testing with Karate DSL" />
+<meta property="og:description" content="Introduction
+In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
+Testing
+For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
+I selected the IUCN Red List of Threatened Species example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/blog/more-testing-with-karate/" />
-<meta property="og:image" content="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://mervebozkir.com/blog/more-testing-with-karate/" />
+<meta property="og:image" content="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" /><meta property="article:section" content="blog" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" />
+<meta name="twitter:image" content="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" />
 <meta name="twitter:title" content="Web Service Testing with Karate DSL"/>
-<meta name="twitter:description" content="Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
-Testing For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
-I selected the IUCN Red List of Threatened Species example from the Animals API examples."/>
+<meta name="twitter:description" content="Introduction
+In the previous article, we talked about creating a project with Karate and created a small test. Now, let&rsquo;s try to create some more detailed test examples.
+Testing
+For our first example, let&rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
+I selected the IUCN Red List of Threatened Species example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species."/>
 
 
 <script type="application/ld+json">
@@ -61,13 +64,13 @@ I selected the IUCN Red List of Threatened Species example from the Animals API 
       "@type": "ListItem",
       "position":  1 ,
       "name": "Blogs",
-      "item": "http://localhost:1313/blog/"
+      "item": "https://mervebozkir.com/blog/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Web Service Testing with Karate DSL",
-      "item": "http://localhost:1313/blog/more-testing-with-karate/"
+      "item": "https://mervebozkir.com/blog/more-testing-with-karate/"
     }
   ]
 }
@@ -78,37 +81,37 @@ I selected the IUCN Red List of Threatened Species example from the Animals API 
   "@type": "BlogPosting",
   "headline": "Web Service Testing with Karate DSL",
   "name": "Web Service Testing with Karate DSL",
-  "description": "Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let\u0026rsquo;s try to create some more detailed test examples.\nTesting For our first example, let\u0026rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.\nI selected the IUCN Red List of Threatened Species example from the Animals API examples.",
+  "description": "Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let\u0026rsquo;s try to create some more detailed test examples.\nTesting For our first example, let\u0026rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.\nI selected the IUCN Red List of Threatened Species example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species.\n",
   "keywords": [
     "Karate DSL", "API Testing", "BDD"
   ],
   "articleBody": "Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let’s try to create some more detailed test examples.\nTesting For our first example, let’s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.\nI selected the IUCN Red List of Threatened Species example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species.\nFor our first example, let’s open our project in the IntelliJ application again.\nFirst, let’s call the service that lists the isocodes of countries. We specify the URL information of the address we need to go to http://apiv3.iucnredlist.org/api/v3/country/list?token='YOUR-TOKEN' in the background. In Karate tests, the background is the area where we use common definitions and is executed before every test.\nWe can also specify the URL information on the scenario, but it will be better to specify it in the background since we will use it in multiple scenarios.\nAfterwards, we can start defining the path we will use in our scenario.\nIn this way, we have specified the service we want to call. Before proceeding, we can run our test once to check if the access is provided.\nWe can see from the test result that access to the specified address is provided.\nThe service address we want to access was http://apiv3.iucnredlist.org/api/v3/country/list?token='YOUR-TOKEN'. Here, the token definition that comes after the question mark is the parameter value expected by the service. Parameter information in Karate scenarios is specified as shown below.\nAfterwards, we complete our test steps by specifying our method and the status we expect, and by printing the response.\nWhen we run our test, we see that information for 251 countries is listed.\nHere, the results content is sent as an array. We can retrieve the desired element from this array by specifying its index number.\nBefore printing the element in the array, I printed “example” to make it easier to distinguish in the printed response. Then, to access the elements inside the array, I specified response.results and then the index number of the element I wanted to retrieve.\nIn this way, we can view the value of the element printed in the response as shown below.\nLet’s try calling a different service. Since we defined the URL in the background, we can create a different scenario by just changing the path. When we run the feature in this way, we can see that both scenarios work successfully.\nIn Karate, we can use the match command to check whether the fields returned in the response are equal to the values we want. In our second scenario, there is also a response returned as an array. Here, let’s perform a check on the response. For this, we should first access the results in the response and then the field we want to check within the array. Let’s check that the scientific name value of the fourth element in the array is equal to “Abies nordmanniana”.\nIn this way, we can ensure the control of the field returned in the response. If we write something different on the right side, we can also see this in our test result.\nWhen we run the test after making the change, we can see that the value we expect and the value returned in the response are not equal.\nLet’s continue with the post method.\nIn Karate, we can specify our requests within the scenario steps or call them from outside. If we want to call it within the scenario step, we can write it as shown below.\nHowever, I prefer to call my request from outside because specifying it within the test step can make it difficult to track when there are too many fields in the request.\nTo call our request from outside, we need to create a separate file first. We can do this by right-clicking on the folder where our feature file is located and following the New-\u003e File step. Since we use JSON in our tests, we create our request file with the ‘.json’ extension.\nAfter creating my request in this way, I need to call this request within my test. I do this with the read command.\nThen, by specifying my method and the status I expect, and by printing the response, I complete my test.\nAfter running our test, we can see our result as shown below.\nIf we want to make changes to the request file we use, we can use the set command. After setting it up in this way, we can print our new request and see it.\nWhen we run our test, we can see both our request and our response.\nRequest:\nResponse:\nWe did not make any changes to the content of our user.json file while doing this. With the set command, we can also make dynamic changes to our request.\nI hope my article, where I mentioned the basic steps of web service testing with Karate, will be useful to the readers. 😊\nSOURCES\nhttps://github.com/public-apis/public-apis?source=post_page-----d606862d38a9-------------------------------- https://reqres.in/?source=post_page-----d606862d38a9-------------------------------- Medium\n",
   "wordCount" : "875",
   "inLanguage": "en",
-  "image":"http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/blog/more-testing-with-karate/"
+    "@id": "https://mervebozkir.com/blog/more-testing-with-karate/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Merve Bozkir",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://mervebozkir.com/favicon.ico"
     }
   }
 }
 </script>
 </head>
 
-<body class=" dark" id="top">
+<body class=" dark type-blog" id="top">
 
 <header class="header sticky-header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
+            <a href="https://mervebozkir.com/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
             <span class="logo-switches">
                 <ul class="lang-switch">
                 </ul>
@@ -116,17 +119,17 @@ I selected the IUCN Red List of Threatened Species example from the Animals API 
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://mervebozkir.com/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog" title="Blog">
+                <a href="https://mervebozkir.com/blog" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/experience" title="Experience">
+                <a href="https://mervebozkir.com/experience" title="Experience">
                     <span>Experience</span>
                 </a>
             </li>
@@ -137,7 +140,7 @@ I selected the IUCN Red List of Threatened Species example from the Animals API 
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/">Blogs</a></div>
+    <div class="breadcrumbs"><a href="https://mervebozkir.com/">Home</a>&nbsp;»&nbsp;<a href="https://mervebozkir.com/blog/">Blogs</a></div>
     <h1 class="post-title">
       Web Service Testing with Karate DSL
     </h1>
@@ -148,7 +151,7 @@ Jul 2021
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" alt="">
         
 </figure><div class="toc">
     <details >
@@ -272,16 +275,16 @@ Jul 2021
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/karate-dsl/">Karate DSL</a></li>
-      <li><a href="http://localhost:1313/tags/api-testing/">API Testing</a></li>
-      <li><a href="http://localhost:1313/tags/bdd/">BDD</a></li>
+      <li><a href="https://mervebozkir.com/tags/karate-dsl/">Karate DSL</a></li>
+      <li><a href="https://mervebozkir.com/tags/api-testing/">API Testing</a></li>
+      <li><a href="https://mervebozkir.com/tags/bdd/">BDD</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Merve Bozkir</a></span>
+    <span>&copy; 2026 <a href="https://mervebozkir.com/">Merve Bozkir</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>Web Service Testing | Merve Bozkir</title>
 <meta name="keywords" content="Software Testing, Webservice Testing">
-<meta name="description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+<meta name="description" content="What is a Web Service?
+The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
 Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
-JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML.">
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/web-service-testing/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.2e347c2bfd0eba8d6555a92d3b245a16a78304c408be4eddd37411e14999c48c.css" integrity="sha256-LjR8K/0Ouo1lVaktOyRaFqeDBMQIvk7d03QR4UmZxIw=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+<link rel="canonical" href="https://mervebozkir.com/blog/web-service-testing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.978d721c157a106eb3e5b1ccde794134b945ce8c5f93ea1566e592c5baaead88.css" integrity="sha256-l41yHBV6EG6z5bHM3nlBNLlFzoxfk&#43;oVZuWSxbqurYg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js" integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://mervebozkir.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mervebozkir.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mervebozkir.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mervebozkir.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mervebozkir.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/web-service-testing/">
+<link rel="alternate" hreflang="en" href="https://mervebozkir.com/blog/web-service-testing/">
 <noscript>
     <style>
         #theme-toggle,
@@ -31,25 +32,24 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
         }
 
     </style>
-</noscript>
-  
-
-<meta property="og:title" content="Web Service Testing" />
-<meta property="og:description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+</noscript><meta property="og:title" content="Web Service Testing" />
+<meta property="og:description" content="What is a Web Service?
+The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
 Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
-JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML." />
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/blog/web-service-testing/" />
-<meta property="og:image" content="http://localhost:1313/blog/web-service-testing/ws-test-header.jpg" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://mervebozkir.com/blog/web-service-testing/" />
+<meta property="og:image" content="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" /><meta property="article:section" content="blog" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/blog/web-service-testing/ws-test-header.jpg" />
+<meta name="twitter:image" content="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" />
 <meta name="twitter:title" content="Web Service Testing"/>
-<meta name="twitter:description" content="What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
+<meta name="twitter:description" content="What is a Web Service?
+The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.
 Briefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.
-JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML."/>
+JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication."/>
 
 
 <script type="application/ld+json">
@@ -61,13 +61,13 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
       "@type": "ListItem",
       "position":  1 ,
       "name": "Blogs",
-      "item": "http://localhost:1313/blog/"
+      "item": "https://mervebozkir.com/blog/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Web Service Testing",
-      "item": "http://localhost:1313/blog/web-service-testing/"
+      "item": "https://mervebozkir.com/blog/web-service-testing/"
     }
   ]
 }
@@ -78,37 +78,37 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
   "@type": "BlogPosting",
   "headline": "Web Service Testing",
   "name": "Web Service Testing",
-  "description": "What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.\nBriefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.\nJSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML.",
+  "description": "What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.\nBriefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.\nJSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication.\n",
   "keywords": [
     "Software Testing", "Webservice Testing"
   ],
   "articleBody": "What is a Web Service? The most basic definition of a web service is the standard protocols (HTTP or HTTPS) used for communication between systems. This communication is mostly centered around XML and JSON.\nBriefly, XML (Extensible Markup Language) is a language that enables the creation of easily readable documents, known in Turkish as Genişletilebilir İşaretleme Dili.\nJSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyonu in Turkish, is a more flexible language compared to XML. It is also one of the languages used for data communication.\nApplications and systems written in different programming languages and running on various platforms communicate through JSON or XML, making them independent of any operating system or programming language.\nWeb services can be examined under the SOAP and REST architectures. Let’s briefly touch on these concepts.\nSOAP: Standing for Simple Object Access Protocol, SOAP is a service protocol that primarily uses the HTTP protocol for communication. It communicates exclusively through XML and is not flexible in this regard.\nAlthough it only supports communication through XML, security controls are easier within SOAP, making it more frequently used when such controls are necessary.\nREST: Standing for Representational State Transfer, REST is an architecture that also uses the HTTP protocol for communication. However, unlike SOAP, it does not mandate the use of XML. It allows communication using JSON, HTML, or even plain text. This flexibility makes it more preferred.\nThe amount of data transferred within REST is smaller, making it ideal for applications requiring high performance.\nWeb Service Testing Web service tests hold a significant place among test types and are conducted to check the functionality, performance, and reliability of an application or system. To ensure systems work successfully and data flow is correctly provided, it is necessary to test the web services that supply data to the user interface.\nThe general working principle of web service tests is the same. The client sends a request, and the server returns an appropriate response based on the received request. It is crucial to ensure the correctness of the fields in the sent request; otherwise, an incorrect response will be returned, leading to a misinterpretation of the test.\nWeb service tests are similar to unit tests in some aspects but differ in the following way: the development of web service tests is done in a way that supports all versions of the application. Thus, even if a new version of the application is released, regression testing can be performed for both the current and all previous versions. This situation prevents an increase in test time during the development of new parts of the product and ensures usability in older versions of the product without needing changes.\nThere are many tools available for conducting web service testing. The most common ones are SoapUI, Postman, and JMeter. Web service tests can be performed manually with SoapUI, while Postman and JMeter are more commonly used for automating web service tests.\nIn this article, I briefly introduced web services and discussed the purposes of web service testing. See you in future articles :)\nSOURCES\nhttps://www.tutorialspoint.com/webservices/what_are_web_services.htm https://www.guru99.com/webservice-testing-beginner-guide.html Medium\n",
   "wordCount" : "515",
   "inLanguage": "en",
-  "image":"http://localhost:1313/blog/web-service-testing/ws-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/blog/web-service-testing/"
+    "@id": "https://mervebozkir.com/blog/web-service-testing/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Merve Bozkir",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://mervebozkir.com/favicon.ico"
     }
   }
 }
 </script>
 </head>
 
-<body class=" dark" id="top">
+<body class=" dark type-blog" id="top">
 
 <header class="header sticky-header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
+            <a href="https://mervebozkir.com/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
             <span class="logo-switches">
                 <ul class="lang-switch">
                 </ul>
@@ -116,17 +116,17 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://mervebozkir.com/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog" title="Blog">
+                <a href="https://mervebozkir.com/blog" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/experience" title="Experience">
+                <a href="https://mervebozkir.com/experience" title="Experience">
                     <span>Experience</span>
                 </a>
             </li>
@@ -137,7 +137,7 @@ JSON (JavaScript Object Notation), which translates to JavaScript Nesne Notasyon
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/">Blogs</a></div>
+    <div class="breadcrumbs"><a href="https://mervebozkir.com/">Home</a>&nbsp;»&nbsp;<a href="https://mervebozkir.com/blog/">Blogs</a></div>
     <h1 class="post-title">
       Web Service Testing
     </h1>
@@ -148,7 +148,7 @@ Dec 2020
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/blog/web-service-testing/ws-test-header.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://mervebozkir.com/blog/web-service-testing/ws-test-header.jpg" alt="">
         
 </figure><div class="toc">
     <details >
@@ -199,15 +199,15 @@ Dec 2020
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/software-testing/">Software Testing</a></li>
-      <li><a href="http://localhost:1313/tags/webservice-testing/">Webservice Testing</a></li>
+      <li><a href="https://mervebozkir.com/tags/software-testing/">Software Testing</a></li>
+      <li><a href="https://mervebozkir.com/tags/webservice-testing/">Webservice Testing</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Merve Bozkir</a></span>
+    <span>&copy; 2026 <a href="https://mervebozkir.com/">Merve Bozkir</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
