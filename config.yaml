@@ -1,5 +1,5 @@
 baseURL: "https://mervebozkir.com"
-languageCode: en-us
+locale: en-US
 title: Merve Bozkir
 theme: PaperMod
 
@@ -42,7 +42,7 @@ params:
     imageHeight: 220
     buttons:
        - name: Resume
-         url: "https://drive.google.com/file/d/1DxAneOy-IBgfnBRaA7uHqMusyMOfS996/view"
+         url: "https://drive.google.com/file/d/1K-0cetkOBWhE-3iQuI1mJPIG85l8OEpF/view"
 
   # List View
   hideDescriptionInList: false

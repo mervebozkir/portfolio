@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>BDD on Merve Bozkir</title>
-    <link>http://localhost:1313/tags/bdd/</link>
+    <link>https://mervebozkir.com/tags/bdd/</link>
     <description>Recent content in BDD on Merve Bozkir</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://mervebozkir.com/tags/bdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Service Testing with Karate DSL</title>
-      <link>http://localhost:1313/blog/more-testing-with-karate/</link>
+      <link>https://mervebozkir.com/blog/more-testing-with-karate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/more-testing-with-karate/</guid>
-      <description>Introduction In the previous article, we talked about creating a project with Karate and created a small test. Now, let&amp;rsquo;s try to create some more detailed test examples.
-Testing For our first example, let&amp;rsquo;s look at API examples on GitHub. On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.
-I selected the IUCN Red List of Threatened Species example from the Animals API examples.</description>
+      <guid>https://mervebozkir.com/blog/more-testing-with-karate/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In the previous article, we talked about creating a project with Karate and created a small test. Now, let&amp;rsquo;s try to create some more detailed test examples.&lt;/p&gt;
+&lt;h1 id=&#34;testing&#34;&gt;Testing&lt;/h1&gt;
+&lt;p&gt;For our first example, let&amp;rsquo;s look at &lt;a href=&#34;https://github.com/public-apis/public-apis&#34;&gt;API examples on GitHub.&lt;/a&gt; On the opened page, under the Public APIs heading, we can click on the Animals option or scroll down to reach the same heading.&lt;/p&gt;
+&lt;p&gt;I selected the &lt;a href=&#34;http://apiv3.iucnredlist.org/api/v3/docs&#34;&gt;IUCN Red List of Threatened Species&lt;/a&gt; example from the Animals API examples. You can also continue with a different example. When we click the link, we get examples for the International Union for Conservation of Nature Red List of Threatened Species.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>What is Karate DSL? How to Create a Project and Perform Web Service Testing?</title>
-      <link>http://localhost:1313/blog/what-is-karate-testing/</link>
+      <link>https://mervebozkir.com/blog/what-is-karate-testing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/blog/what-is-karate-testing/</guid>
-      <description>Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it&amp;rsquo;s NOT THE Karate. 😅
-First, let&amp;rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.
-We can list its basic features as follows:
-You do not need to know any programming language to use the Karate tool.</description>
+      <guid>https://mervebozkir.com/blog/what-is-karate-testing/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Hello everyone, in this article, I will talk about the use of Karate. And no it&amp;rsquo;s &lt;strong&gt;NOT&lt;/strong&gt; &lt;em&gt;THE&lt;/em&gt; Karate. 😅&lt;/p&gt;
+&lt;p&gt;First, let&amp;rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.&lt;/p&gt;
+&lt;p&gt;We can list its basic features as follows:&lt;/p&gt;
+&lt;p&gt;You do not need to know any programming language to use the Karate tool.
+Tests are created using the Gherkin language with BDD syntax.
+Writing and reading tests is easy.
+JSON, XML, and HTTP formats can be used.
+It is possible to access different test environments from the same script.&lt;/p&gt;</description>
     </item>
     
   </channel>

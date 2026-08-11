@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
 <title>What is Karate DSL? How to Create a Project and Perform Web Service Testing? | Merve Bozkir</title>
 <meta name="keywords" content="Karate DSL, API Testing, BDD">
-<meta name="description" content="Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
+<meta name="description" content="Introduction
+Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
 First, let&rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.
 We can list its basic features as follows:
-You do not need to know any programming language to use the Karate tool.">
+You do not need to know any programming language to use the Karate tool.
+Tests are created using the Gherkin language with BDD syntax.
+Writing and reading tests is easy.
+JSON, XML, and HTTP formats can be used.
+It is possible to access different test environments from the same script.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/blog/what-is-karate-testing/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.min.2e347c2bfd0eba8d6555a92d3b245a16a78304c408be4eddd37411e14999c48c.css" integrity="sha256-LjR8K/0Ouo1lVaktOyRaFqeDBMQIvk7d03QR4UmZxIw=" rel="preload stylesheet" as="style">
-<script defer crossorigin="anonymous" src="/assets/js/highlight.min.2eadbb982468c11a433a3e291f01326f2ba43f065e256bf792dbd79640a92316.js" integrity="sha256-Lq27mCRowRpDOj4pHwEybyukPwZeJWv3ktvXlkCpIxY="
+<link rel="canonical" href="https://mervebozkir.com/blog/what-is-karate-testing/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.min.978d721c157a106eb3e5b1ccde794134b945ce8c5f93ea1566e592c5baaead88.css" integrity="sha256-l41yHBV6EG6z5bHM3nlBNLlFzoxfk&#43;oVZuWSxbqurYg=" rel="preload stylesheet" as="style">
+<script defer crossorigin="anonymous" src="/assets/js/highlight.min.199271f351c4b46f0d0536b6e2eb89a4766040c0e8df57f1a695c6570d8a4e0f.js" integrity="sha256-GZJx81HEtG8NBTa24uuJpHZgQMDo31fxppXGVw2KTg8="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://mervebozkir.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://mervebozkir.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://mervebozkir.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://mervebozkir.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://mervebozkir.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/blog/what-is-karate-testing/">
+<link rel="alternate" hreflang="en" href="https://mervebozkir.com/blog/what-is-karate-testing/">
 <noscript>
     <style>
         #theme-toggle,
@@ -32,27 +37,34 @@ You do not need to know any programming language to use the Karate tool.">
         }
 
     </style>
-</noscript>
-  
-
-<meta property="og:title" content="What is Karate DSL? How to Create a Project and Perform Web Service Testing?" />
-<meta property="og:description" content="Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
+</noscript><meta property="og:title" content="What is Karate DSL? How to Create a Project and Perform Web Service Testing?" />
+<meta property="og:description" content="Introduction
+Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
 First, let&rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.
 We can list its basic features as follows:
-You do not need to know any programming language to use the Karate tool." />
+You do not need to know any programming language to use the Karate tool.
+Tests are created using the Gherkin language with BDD syntax.
+Writing and reading tests is easy.
+JSON, XML, and HTTP formats can be used.
+It is possible to access different test environments from the same script." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:1313/blog/what-is-karate-testing/" />
-<meta property="og:image" content="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" /><meta property="article:section" content="blog" />
+<meta property="og:url" content="https://mervebozkir.com/blog/what-is-karate-testing/" />
+<meta property="og:image" content="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" /><meta property="article:section" content="blog" />
 
 
 
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" />
+<meta name="twitter:image" content="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" />
 <meta name="twitter:title" content="What is Karate DSL? How to Create a Project and Perform Web Service Testing?"/>
-<meta name="twitter:description" content="Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
+<meta name="twitter:description" content="Introduction
+Hello everyone, in this article, I will talk about the use of Karate. And no it&rsquo;s NOT THE Karate. 😅
 First, let&rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.
 We can list its basic features as follows:
-You do not need to know any programming language to use the Karate tool."/>
+You do not need to know any programming language to use the Karate tool.
+Tests are created using the Gherkin language with BDD syntax.
+Writing and reading tests is easy.
+JSON, XML, and HTTP formats can be used.
+It is possible to access different test environments from the same script."/>
 
 
 <script type="application/ld+json">
@@ -64,13 +76,13 @@ You do not need to know any programming language to use the Karate tool."/>
       "@type": "ListItem",
       "position":  1 ,
       "name": "Blogs",
-      "item": "http://localhost:1313/blog/"
+      "item": "https://mervebozkir.com/blog/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "What is Karate DSL? How to Create a Project and Perform Web Service Testing?",
-      "item": "http://localhost:1313/blog/what-is-karate-testing/"
+      "item": "https://mervebozkir.com/blog/what-is-karate-testing/"
     }
   ]
 }
@@ -81,37 +93,37 @@ You do not need to know any programming language to use the Karate tool."/>
   "@type": "BlogPosting",
   "headline": "What is Karate DSL? How to Create a Project and Perform Web Service Testing?",
   "name": "What is Karate DSL? How to Create a Project and Perform Web Service Testing?",
-  "description": "Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it\u0026rsquo;s NOT THE Karate. 😅\nFirst, let\u0026rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.\nWe can list its basic features as follows:\nYou do not need to know any programming language to use the Karate tool.",
+  "description": "Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it\u0026rsquo;s NOT THE Karate. 😅\nFirst, let\u0026rsquo;s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.\nWe can list its basic features as follows:\nYou do not need to know any programming language to use the Karate tool. Tests are created using the Gherkin language with BDD syntax. Writing and reading tests is easy. JSON, XML, and HTTP formats can be used. It is possible to access different test environments from the same script.\n",
   "keywords": [
     "Karate DSL", "API Testing", "BDD"
   ],
   "articleBody": "Introduction Hello everyone, in this article, I will talk about the use of Karate. And no it’s NOT THE Karate. 😅\nFirst, let’s briefly introduce Karate. Karate is an open-source test tool created by Peter Thomas in 2017. With Karate, it is possible to perform manual testing, automation testing, and performance testing.\nWe can list its basic features as follows:\nYou do not need to know any programming language to use the Karate tool. Tests are created using the Gherkin language with BDD syntax. Writing and reading tests is easy. JSON, XML, and HTTP formats can be used. It is possible to access different test environments from the same script.\nCREATING A PROJECT Now let’s create our first project with Karate. First, we open our IntelliJ application. We click on the new project button.\nAfterwards, the following screen will appear. Here we need to select the ‘Create from archetype’ option.\nAfter selecting this option, the ‘Add Archetype’ button will become active. We click this button and fill in the necessary fields as shown below.\nAs we proceed, the previous screen will appear again, and the archetype we created will be visible in the list. We select the archetype and move on to the next step.\nNext, we need to name our project. I chose to name it firstProject. You can name it as you wish and continue.\nIn the next step, you can proceed by selecting as shown below without making any changes.\nWhen we click the finish button, our project will appear as shown below.\nAfter the project is created, we can see logs indicating that the Maven libraries have been installed in the terminal. At this step, it should say BUILD SUCCESS as shown below. Otherwise, not all libraries would have been installed, and we would encounter errors in our project.\nHere, we also have a sample feature file that we can see as an example.\nWe can see the sample scenarios inside this file.\nCREATING A TEST Yes, we have created our first project. Now we can start writing our tests in our feature file. For this, we can create a new test folder or continue with the existing one. I will continue with the existing folder. Let’s right-click on the Java folder. Select New-\u003ePackage.\nRight-click on the new folder we created and select New-\u003eFile.\nIn the Gherkin language, test files are named as feature. Therefore, we should name our test file with the ‘.feature’ extension.\nAfter defining our test file, a blank page will appear.\nThe features of the scenarios we will test should be defined in the feature file. I preferred to define the feature in the same way as the file name (basicTest.feature), but it can also be defined differently according to the scenarios.\nNext, let’s name our test scenario.\nAfter naming our scenario, we can move on to our steps. But first, let’s talk about some keywords used in the test steps and how they are used.\nGiven: The step where the necessary condition to start our scenario is specified. When: The step where the action to be taken is specified. Then: The step where the event that will happen after the action is taken is defined. And: The keyword used when there is more than one step.\nAs shown below, we created our first scenario. We specified the address we want to go to, the method we will use, the status response we want to see, and then added the step to print our response.\nTo run the test, we can right-click on the scenario and select run, or we can click the green arrow on the left to run the test.\nAfter running the test, the response can be viewed as shown below.\nAll test results will be displayed under the printed response as shown below.\nIn this way, we briefly talked about Karate and its usage. I hope this article will be useful to the readers.\nSOURCES\nhttps://www.youtube.com/watch?v=-KOJ12Dbxrk https://en.wikipedia.org/wiki/Karate_(software) https://en.wikipedia.org/wiki/Behavior-driven_development Medium\n",
   "wordCount" : "661",
   "inLanguage": "en",
-  "image":"http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "image":"https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/blog/what-is-karate-testing/"
+    "@id": "https://mervebozkir.com/blog/what-is-karate-testing/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Merve Bozkir",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://mervebozkir.com/favicon.ico"
     }
   }
 }
 </script>
 </head>
 
-<body class=" dark" id="top">
+<body class=" dark type-blog" id="top">
 
 <header class="header sticky-header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
+            <a href="https://mervebozkir.com/" accesskey="h" title="Merve Bozkir (Alt + H)">Merve Bozkir</a>
             <span class="logo-switches">
                 <ul class="lang-switch">
                 </ul>
@@ -119,17 +131,17 @@ You do not need to know any programming language to use the Karate tool."/>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/" title="Home">
+                <a href="https://mervebozkir.com/" title="Home">
                     <span>Home</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/blog" title="Blog">
+                <a href="https://mervebozkir.com/blog" title="Blog">
                     <span>Blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/experience" title="Experience">
+                <a href="https://mervebozkir.com/experience" title="Experience">
                     <span>Experience</span>
                 </a>
             </li>
@@ -140,7 +152,7 @@ You do not need to know any programming language to use the Karate tool."/>
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/blog/">Blogs</a></div>
+    <div class="breadcrumbs"><a href="https://mervebozkir.com/">Home</a>&nbsp;»&nbsp;<a href="https://mervebozkir.com/blog/">Blogs</a></div>
     <h1 class="post-title">
       What is Karate DSL? How to Create a Project and Perform Web Service Testing?
     </h1>
@@ -151,7 +163,7 @@ Jun 2021
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/blog/what-is-karate-testing/karate-test-header.jpg" alt="">
+<figure class="entry-cover"><img loading="lazy" src="https://mervebozkir.com/blog/what-is-karate-testing/karate-test-header.jpg" alt="">
         
 </figure><div class="toc">
     <details >
@@ -252,16 +264,16 @@ It is possible to access different test environments from the same script.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/karate-dsl/">Karate DSL</a></li>
-      <li><a href="http://localhost:1313/tags/api-testing/">API Testing</a></li>
-      <li><a href="http://localhost:1313/tags/bdd/">BDD</a></li>
+      <li><a href="https://mervebozkir.com/tags/karate-dsl/">Karate DSL</a></li>
+      <li><a href="https://mervebozkir.com/tags/api-testing/">API Testing</a></li>
+      <li><a href="https://mervebozkir.com/tags/bdd/">BDD</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2024 <a href="http://localhost:1313/">Merve Bozkir</a></span>
+    <span>&copy; 2026 <a href="https://mervebozkir.com/">Merve Bozkir</a></span>
 </footer>
 <a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
